@@ -6,52 +6,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-       body{
-         margin:0px;
+        *{
+            margin: 0px;
+            padding: 0px;
+          
+        
         }
-        #d{
-            margin: 6%;
+        body{
+            background-image: url("https://images.pexels.com/photos/459301/pexels-photo-459301.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
         }
-        #d1{float: left;
-            width: 30%;height:80vh;
-            background-color: cyan;
-          }
-         #cont{float: right;height: 500px;
-            width: 70%; 
-            background-color: rgb(94, 31, 41);
-            }
-            button
-            {
-                background-color: yellow; padding: 5px;
-            }
-        #d2{
-            padding-left:20px ;color: white;
+        #main{
+            border: 1px solid black;
+            margin: 60px 10%;
+            height: 90vh;
+            box-shadow: 0 0 10px black;
+
         }
+        #image{
+            float: left;
+            width: 30%;
+            height: 100%;
+         }
+        #content{
+          
+            height: 100%;
+            float: right;
+            width: 70%;
+            color: white;
+            background:linear-gradient(45deg,darkred,black);
+        }
+        #cont{
+            padding-left: 20px;
+        }
+        #button{
+            padding: 8px;
+            border-radius: 5%;
+            background-color: black;
+            box-shadow: 0 0 10px white;      
+            border: none;  
+            transition: transform  0.2s;
+        }
+        a{
+            color: white ;
+            text-decoration: none;
+          
+          
+
+        }
+        #button:hover{
+            transform: scale(1.1);
+        }
+
+      
        
       
 
     </style>
 </head>
 <body>
-    <div id="d">
-        <div id="d1">
-            <img src="https://images.pexels.com/photos/937481/pexels-photo-937481.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" width="100%" height="500px" />
+    <div id="main">
+        <div id="image">
+           <img src="https://images.unsplash.com/photo-1617137968427-85924c800a22?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bWVucyUyMGZhc2hpb258ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" width="100%" height="100%"  /> 
         </div>
-        <div id="cont">
-        <div id="d2">
-            <h4> Hii there....</h4>
-            <h2> I am Vivek Mishra         </h2>
-            <h5 style="font-style: italic;">Frontend Developer</h5>
+        <div id="content">
+            <div id="cont">
+            <h4 style="margin-top: 40px;"> Hii there....</h4>
+            <h2  > I am Vivek Mishra  </h2>
+            <h5 style="font-style: italic;margin-bottom: 20px;">Frontend Developer</h5>
       
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ad corrupti adipisci minima tempore ipsa magni dolor possimus doloremque, ea esse at dolore aut excepturi consequuntur voluptatibus a incidunt doloribus hic unde. Molestiae veniam et facilis quas officia suscipit perspiciatis.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, iusto. Alias hic provident, dicta iusto impedit nostrum veritatis modi laudantium enim totam eos, culpa necessitatibus aliquid iure quae incidunt itaque. Ullam suscipit odit sapiente, perspiciatis similique adipisci. Blanditiis, repellat harum.</p>
+            <p style="margin-bottom: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ad corrupti adipisci minima tempore ipsa magni dolor possimus doloremque, ea esse at dolore aut excepturi consequuntur voluptatibus a incidunt doloribus hic unde. Molestiae veniam et facilis quas officia suscipit perspiciatis.</p>
+            <p style="margin-bottom: 20px;"><strong> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet in qui quisquam aut temporibus alias dolor soluta, itaque debitis minus aspernatur provident placeat et autem distinctio! Officia accusamus natus, laboriosam ipsam, eum nihil, quo perspiciatis ratione tempora blanditiis quisquam delectus quibusdam obcaecati minima incidunt recusandae quas ex earum! Iste, nesciunt!</strong></p>
           
-            <button  >
+            <button id="button"  >
+                <a  href="https://vivekmishra631998.github.io/Portfolio/" target="_blank">
                 Explore more
+                </a>
             </button>
+            </div>
            
         </div>
-        </div>
+       
        
         
     </div>
