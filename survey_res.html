@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mishra Restuarant</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <style>
+           *{margin: 0px;padding: 0px;}
+           #header{
+              background-image: url("https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+              height: 90vh;
+              background-repeat: no-repeat;
+              background-attachment: fixed;
+              background-size: cover;
+              background-position: center;
+              /* box-shadow: 0 0 15px white; */
+             
+           }
+           #subhead{
+            color: white;
+               /* width: 100%; */
+               height: 80px;
+               background:linear-gradient(45deg,darkred,black) ;
+               /* margin: 30px; */
+              
+              font-family:Lucida Handwriting;
+              padding-top: 30px;
+              padding-left: 40px ;
+              font-size: 20px;
+           }
+           #sub1{
+               float: left;
+               width:50%;
+           }
+           #sub2{
+                float: right;
+                width:50%;
+           }
+           .button{
+               color: white;
+            padding: 15px;
+            border-radius: 10%;
+            background-color:black;
+            box-shadow: 0 0 10px white;      
+            border: none;  
+            transition: transform  0.4s ease;
+            margin-right: 20px;
+           }
+           .button:hover{transform: scale(1.1);}
+           a{
+               text-decoration: none;
+               color:white;
+           }
+           #social{  text-align: center;
+            height: 100px;
+            background:linear-gradient(45deg,darkred,black) ;
+            padding-top: 10px;
+            }
+            body{
+                background-image: url("https://images.pexels.com/photos/4041280/pexels-photo-4041280.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+                background-position: center;
+                background-size: cover;
+                text-align: center;
+            }
+            #survey{
+                 background-image: url("https://images.pexels.com/photos/4041280/pexels-photo-4041280.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+                background-position: center;
+                background-size: cover;
+                text-align: center; 
+                margin: 60px 0px;  
+            }
+            table{
+                border: 1px solid white;
+                box-shadow: 0 0 20px rgb(243, 162, 176);
+                 width: 970px; 
+                 margin: 60px 150px;
+                 background: linear-gradient(45deg,pink,white);
+              
+            }
+           .tdL{
+                text-align: right;
+                padding:15px 0px;
+                width: 250px;
+               
+            } 
+            input {
+                padding :5px;
+                
+            }
+            textarea{
+                padding :5px;
+                
+            }
+            #selector{
+                width:100px
+            }
+         
+       
+
+          
+    </style>
+
+</head>
+<body>
+    <div id="header">
+        <div id="subhead">
+            <div id="sub1">
+            <h1 >Mishra Restuarant</h1>
+            </div>
+            <div id="sub2">
+                <button class="button" style="margin-left: 180px;"><a href="Restuarant.html" >Home</a></button>
+                <button class="button"><a href="aboutus_res.html" target="_blank">About us</a></button>
+                <button class="button"><a href="survey_res.html" target="_blank">Survey Form </a></button>
+           
+            </div>
+
+            </div>           
+    </div>
+    <div id="survey">
+        <h2>Survey Form</h2>
+        <form>
+        <table  > 
+            <tr >
+                 <td class="tdL" style="padding-top: 50px;"><label>Name </label></td>
+                  <td class="tdR" style="padding-top: 50px;" ><input type="text" pattern="a-Z" placeholder="Your Name..."/></td>
+            </tr>
+           <tr>
+            <td  class="tdL"><label>Email</label></td>
+             <td><input type="email" pattern=".+@gmail.com" placeholder="user@gmail.com"/></td>
+           </tr>
+          <tr>
+         <td  class="tdL"><label>Mobile</label></td>
+         <td><input type="tel" minlength="10" maxlength="10"  placeholder="+91   "/></td>
+          </tr>
+          <tr>
+            <td  class="tdL"><label>Address</label></td>
+            <td><textarea name="address"  cols="30" rows="10"></textarea></td>
+           </tr>
+           <tr>
+            <td  class="tdL"><label>Gender</label></td>
+            <td>
+                <input type="radio"/>
+                <label>Male</label><br>
+                <input style="margin-left:12px;" type="radio"/>
+                <label>Female</label>
+            </td>
+           </tr>
+           <tr>
+            <td class="tdL">
+                <label> Vehicle  </label>
+              
+            </td>
+             <td>  <select  id="selector" >
+                <option value="Bicycle">Bicycle</option>
+                <option value="Bike" selected>Bike</option>
+                <option value="Car">Car</option>
+                <option value="No Vehicle">Not by vehicle</option>
+            </select>
+          </td >
+           </tr>
+           <tr>
+            <td class="tdL"><label>Liked</label></td>
+             <td>
+                 <input type="checkbox" />
+                 <label >Pizza</label>
+                 <input type="checkbox" />
+                 <label >Burger</label>
+                 <input type="checkbox" />
+                 <label >Chicken Wings</label>
+                 <input type="checkbox" />
+                 <label >Dessert</label>
+           </tr>
+           <tr>
+            <td class="tdL"><label> Disliked</label></td>
+             <td>
+                <input type="checkbox" />
+                <label >Pizza</label>
+                <input type="checkbox" />
+                <label >Burger</label>
+                <input type="checkbox" />
+                <label >Chicken Wings</label>
+                <input type="checkbox" />
+                <label >Dessert</label>
+             </td>
+           </tr>
+           <tr>
+            <td class="tdL"><label>Feedback</label></td>
+             <td>
+                 <textarea  placeholder="Your Feedback..." cols="30" rows="7"></textarea>
+             </td>
+           </tr>
+           <tr>
+            <td class="tdL" style="padding-bottom: 50px;"><label >Rating</label></td>
+             <td style="padding-bottom: 50px;">
+                 <select  id="selector">
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5" selected>5</option>
+
+                     
+                 </select>
+             </td>
+           </tr>
+        </table>
+         <input class="button" type="reset" value="Reset"/>
+         <input class="button" type="submit" value="Submit"/>
+
+
+        </form>
+    </div>
+    <div id="social">
+        <button class="button"> <a  style="color: blue;" href="https://www.facebook.com/vivekmishra631998/" target="_blank"><i class="fab fa-facebook-f"></i></a></button>
+        <button class="button">  <a  style="color: rgb(112, 11, 112);" href="https://www.instagram.com/mishra.vivek1/"  target="_blank"><i class="fab fa-instagram"></i></a></button>
+        <button class="button">  <a style="color: royalblue;"  href="https://twitter.com/VivekMi71588368"  target="_blank"><i class="fab fa-twitter"></i></a></button>
+        <button class="button">   <a style="color: blue;" href="https://www.linkedin.com/in/vivek-mishra-791865189/"  target="_blank"><i class="fab fa-linkedin-in"></i></a></button>
+        <h4 style="margin-top: 20px;color: white;">All copyrights &copy; are reserved by Vivek Mishra</h4>
+
+       
+      
+      
+     
+       </div>
+ 
+    
+  
+
+
+    
+</body>
+</html>
