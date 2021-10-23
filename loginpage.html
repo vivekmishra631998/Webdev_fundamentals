@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <Style>
+         *{
+             margin: 0px;
+             padding:0px;
+            
+         }
+         body{
+             background-image: url("https://images.pexels.com/photos/1121123/pexels-photo-1121123.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+             background-position: center;
+             background-repeat: no-repeat;
+             background-size: cover;
+            }
+         div{
+             border: 1px solid black;
+             background:linear-gradient(45deg,rgb(146, 8, 116),white);
+             margin: 100px 200px 100px; 
+             border-radius: 5%;
+             text-align: center; 
+         }
+         .head{
+             margin-top: 50px;
+         }
+         table{
+             margin-left: 200px;
+             width:500px;
+             height:150px ;
+        
+         }
+         input{
+             padding:5px
+         } 
+         .button{
+             margin: 30px;
+             padding:5px 20px;
+            
+             border-radius: 20%;
+             transition: transform 0.4s ease;
+             box-shadow: 0 0 10px black;
+         }
+         .button:hover{
+             transform:scale(1.1);
+             background:linear-gradient(45deg,darkred,black);
+             color: white;
+         }
+    </Style>
+</head>
+<body>
+    <div>
+    <h2 class="head">Login Section</h2><br>
+    <h3 class="head2">Happy to see you back user!</h3>
+    <form>
+        <table>
+            <tr>
+                <td><label >User ID</label></td>
+                <td><input type="text"/></td>
+
+            </tr>
+            <tr>
+                <td><label >Password</label></td>
+                <td><input type="password"/></td>
+
+            </tr>
+         
+        </table>
+        <input class="button" type="reset" value="Reset"/> 
+        <input  class="button" type="submit" value="Login"/> 
+    </form><br>
+    <h4>Not having an account?</h4>
+    <!-- <button><a href="">Register</a></button> -->
+    <a href="Registration.html" target="_blank"> <button class="button">Register</button></a>
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+         
+        }
+        body{
+            background-image: url("https://images.pexels.com/photos/3695378/pexels-photo-3695378.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        #div{
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(124, 117, 117, 0.568);
+            text-align: center;
+            /* border: 1px solid rgba(124, 117, 117, 0.568); */
+            margin:40px 80px ;
+            background: linear-gradient(45deg,pink,white);
+            border-radius: 10%;
+            
+        }
+        td{
+            width:100%; padding: 10px;
+        }
+        th{
+            padding-left :250px;
+            text-align: center;
+        }
+        input{
+            padding:5px;
+        }
+        .button{
+            width: 150px;height: 30px;
+            transition: transform 0.4s ease;
+        }
+        .button:hover{
+            transform: scale(1.1);
+            color: blue;
+            box-shadow: 0 0 10px blue; 
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="div">
+        <h2 style="margin-bottom: 20px;">Registration Form</h2>
+        <form>
+            <table>
+                <tr>
+                    <th><label>Name</label></th>
+                    <td><input type="text" name="name" pattern="[a-Z]" minlength="3" placeholder="Your name.." required/></td>
+                </tr>
+                <tr>
+                    <th><label>Email</label></th>
+                    <td><input type="email" pattern=".+@gmail.com" required/></td>
+                </tr>
+              
+                <tr>
+                    <th><label>Mobile</label></th>
+                    <td>+91<input type="tel" minlength="10" maxlength="10" required/></td>
+                </tr>
+              
+                <tr>
+                    <th><label>Gender</label></th>
+                    <td><input type="radio" name="gender" />
+                        <label>Male</label>
+                        <input type="radio" name="gender" />
+                        <label>Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <th><label for="selector" >You want to be..</label></th>
+                    <td><select id="selector" style="padding:5px;">
+                          <option value="Full stack" selected>Full Stack Developer</option>
+                          <option value="Frontend">Frontend Developer</option>
+                          <option value="Backend">Backend Developer</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <th><label>Courses</label></th>
+                    <td>
+                        <input type="checkbox" />
+                        <label style="margin-left: 3px;">HTML</label>
+                        <input type="checkbox" />
+                        <label style="margin-left: 3px;">CSS</label>
+                        <input type="checkbox" />
+                        <label style="margin-left: 3px;">JAVA</label>
+                        <input type="checkbox" />
+                        <label style="margin-left: 3px;">DSA</label>
+                    </td>
+                </tr>
+              
+                <tr>
+                    <th><label>Password</label></th>
+                    <td><input type="password" /></td>
+                </tr>
+                <tr>
+                    <th><label>Confirm Password</label></th>
+                    <td><input type="password" /></td>
+                </tr>
+            </table><br><br>
+            <input class="button" style="margin-right: 40px;" type="reset" value="Reset"/>
+          <input  class="button" type="submit" value="Register"/>
+
+       </form><br><br>
+       <h4>Already a user?</h4><br>
+      <a href="loginpage.html" target="_blank"> <button class="button" style="padding:5px;">Log in</button></a>
+
+       
+        
+
+    </div>
+    
+</body>
+</html>
