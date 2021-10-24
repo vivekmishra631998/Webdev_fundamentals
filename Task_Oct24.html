@@ -69,10 +69,10 @@
         <form>
         <table>
             <tr><th><label>Name</label></th>
-                <td><input type="text" placeholder="Your Name...." required pattern="[a-Z]" name="name"></td>
+                <td><input type="text" placeholder="Your Name...." required pattern="[a-Z]" name="name" minlength="3"></td>
             </tr>
             <tr><th><label>Mobile</label></th>
-                <td><input type="tel" placeholder="+91" required pattern="[0-9]" name="phone"></td>
+                <td>+91<input type="tel"  required name="phone" minlength="10" maxlength="10"></td>
             </tr>
             <tr><th><label>Email</label></th>
                 <td><input type="email" placeholder="user@gmail.com" required pattern=".+@gmail.com" name="email"></td>
