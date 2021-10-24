@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>October 24,Test</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            background-image: url("https://images.pexels.com/photos/59992/crocus-flower-spring-purple-59992.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+         #box{
+             width: 1000px;
+             border: 1px solid white;
+             border-radius: 10%;
+             box-shadow: 0 0 20px white ;
+             margin: 100px;
+             background:linear-gradient(45deg,white,rgb(218, 40, 218));
+             }
+             #heading{
+                 text-align: center;
+                 margin: 40px;
+             }
+         table{
+             width: 100%;
+             text-align: center;
+             margin-bottom: 50px;
+         }
+         th{
+             padding: 10px 0px 20px 50px;
+             width: 400px;
+             
+         }
+         td{
+             margin: 10px;
+         }
+         input{
+             padding: 5px;
+         }
+      
+         .button{
+              margin-left: 70px; 
+              margin-bottom: 50px;
+              width:100px;
+              background: linear-gradient(45deg,rgb(124, 9, 124),black);
+              color: white;
+              border:none;
+              transition: transform 0.4s ease;
+              border-radius: 5%;
+         }
+         .button:hover{
+             color:black;
+             transform:scale(1.1);
+             background: linear-gradient(45deg,rgb(207, 53, 207),white);
+             box-shadow: 0 0 10px white;
+         }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <h2 id="heading">Registration for Purchase</h2>
+        <form>
+        <table>
+            <tr><th><label>Name</label></th>
+                <td><input type="text" placeholder="Your Name...." required pattern="[a-Z]" name="name"></td>
+            </tr>
+            <tr><th><label>Mobile</label></th>
+                <td><input type="tel" placeholder="+91" required pattern="[0-9]" name="phone"></td>
+            </tr>
+            <tr><th><label>Email</label></th>
+                <td><input type="email" placeholder="user@gmail.com" required pattern=".+@gmail.com" name="email"></td>
+            </tr>
+            <tr><th><label>Gender</label></th>
+                <td>
+                    <input type="radio"  name="gender">
+                    <label>Male</label>
+                    <input type="radio"  name="gender">
+                    <label>Female</label>
+                </td>
+            </tr>
+            <tr><th><label>Product</label></th>
+                <td>
+                    <select name="selected" id="selector">
+                        <option value="Laptop" selected>Laptop</option>
+                        <option value="Mobile">Mobile</option>
+                        <option value="Desktop">Desktop</option>
+                        <option value="Supercomputer">Supercomputer</option>
+                        <option value="Accessories">Accessories</option>
+                        
+                    </select>
+                </td>
+            </tr>
+            <tr><th><label>Want to Avail</label></th>
+                <td style="text-align: left; padding: 0px 0px 20px 200px;"> 
+                    <input type="checkbox">
+                    <label>First Time Offer</label><br>
+                    <input type="checkbox">
+                    <label>Dussehra Offer</label><br>
+                    <input type="checkbox">
+                    <label>Diwali Offer</label><br>
+                    <input type="checkbox">
+                    <label>Christmas Offer</label><br>
+                    </td>
+            </tr>
+            <tr>
+                <th>Feedback</th>
+                <td><textarea style="padding:5px;" name="Feedback"  cols="30" rows="5"></textarea></td>
+            </tr>
+        </table>
+        <input  class="button" style="margin-left: 360px;" type="reset" value="Reset"/>
+        <input  class="button"  type="submit" value="Submit"/>
+        </form>
+
+    </div>
+    
+</body>
+</html>
