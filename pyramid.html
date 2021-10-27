@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+        #heading{
+            /* same can be acheived by margin auto and giving appropriate width */
+          text-align: center;
+          color: darkred;
+          text-shadow: 1px 1px rgb(199, 53, 53) ;
+          text-decoration-line: underline;
+        }
+        /* here content is nothing in class box, so we took width and height as 0px 
+        otherwise there will be rendered some default white space  */
+       .box{
+           margin: auto;
+           width: 0px;
+           height: 0px;
+           border: 100px solid white;
+
+          }
+          #boxnumber1{
+           position: relative;
+           top: 0px;
+           z-index:3 ;
+           border-bottom: 100px solid cyan;
+          }
+          #boxnumber2{
+            position: relative;
+           bottom: 150px;
+           z-index: 2;
+           border-bottom: 100px solid pink;
+              
+            }
+         #boxnumber3{
+            position: relative;
+           bottom: 300px;
+           z-index:1 ;
+           border-bottom: 100px solid coral;
+              
+            }
+     
+   </style>
+</head>
+<body>
+    <div id="heading"><h2> Position and z-index concept</h2></div>
+    <!-- we are giving both class and id so that we can reuse some properties again and again-->
+     <div class="box" id="boxnumber1"></div>
+     <div class="box" id="boxnumber2"></div>
+     <div class="box" id="boxnumber3"></div>
+    
+</body>
+</html>
