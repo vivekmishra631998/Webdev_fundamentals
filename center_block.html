@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Center Block</title>
+    <style> 
+    *{
+            margin: 0px;
+            padding: 0px;
+
+    }    
+        /* According to value (here,center), justify-content- justify contents (here,square block) horizontally
+        and, align-items- aligns vertically */
+        .container{
+            display:flex;
+           border: 1px solid white;
+           height: calc(100vh - 2px);
+            width: calc(100vw-1px);
+            justify-content: center;
+           align-items: center;
+           background: linear-gradient(75deg,white,tomato );
+
+        }
+        /* block will be centered as its parent is given appropriate properties */
+         .block{
+            
+              width: 100px;
+              height: 100px;
+             box-shadow: 0 0 15px white;
+             background-color: royalblue;
+         }
+    </style>
+</head>
+<body>
+    <!-- container (flexbox) -->
+   <div class="container">
+          <!-- square block to be displayed -->
+          <div class="block"></div>
+   </div>
+</body>
+</html>
