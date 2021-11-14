@@ -34,6 +34,7 @@ body{
 button{
     border-radius: 20%;
     transition: transform  ease-in-out;
+    border: cornflowerblue;
 }
 button:hover{
     color:white;
