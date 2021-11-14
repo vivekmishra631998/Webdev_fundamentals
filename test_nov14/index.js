@@ -7,7 +7,7 @@ function answe(id) {
        document.getElementById('ans2').innerText = ''
        document.getElementById('ans3').innerText = ''
     }
-    if (id == 'Q2')
+    if (id == 'Q2' )
     {
         document.getElementById('ans1').innerText = ''
         document.getElementById('ans2').innerText = 'Yes! we do support them and we will always stand alongside them. We also donate in charity funds in support of farmers. You can check our website and find the paytm or google pay number to donate to the farmers who give us food.'
