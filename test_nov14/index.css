@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Yuji+Boku&display=swap');
+body{
+    background: rgb(231, 221, 221);
+
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    box-shadow: 0 0 15px white;
+    margin: 20vh 23vw;
+    width: 50vw;
+    padding: 1.5em;
+
+}
+#heading{
+    font-style: italic;
+    font-size: 1.2em;
+    font-family: Praise ;
+    color: rgb(185, 59, 13);
+    text-align: center;
+    margin: 0.2em;
+}
+.box{
+    border: 1px solid cornsilk;
+    box-shadow: 0 0 10px cornsilk;
+    padding: 0.5em;
+}
+#ans1,#ans2,#ans3{
+    color: white;
+    background: darkred;
+}
