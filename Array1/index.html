@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          *{
+              text-align: center;
+              margin: 2em 0;
+          }
+          body{
+            background: linear-gradient(45deg,white,pink);
+
+          }
+          input{
+              font-weight: bold;
+              padding: 0.3em;
+              color: white;
+              background: linear-gradient(45deg, red, coral);
+          }
+          button{
+              padding: 0.4em;
+              color: bisque;
+              background: blue;
+              border: blue;
+              box-shadow: 0 0 5px blue;
+          }
+    </style>
+</head>
+<body>
+    <!-- heading section  -->
+      <h3 id="heading">
+          Function giving an array of integers between two integers
+      </h3>
+      <!-- first integer is given by user -->
+      <input id="startInt" type="number">
+      <!-- second integer is given by user -->
+      <input id="endInt" type="number">
+      <br>
+      <br>
+      <!-- button used to click and find the array -->
+      <button id="button" onclick="cal('button')">Click me</button>
+      <br>
+      <br>
+      <!-- resultant array is displayed in this field -->
+      <input id="result" type="text" disabled>
+
+</body>
+<!-- js file  -->
+       <script src="index.js"></script>
+
+</html>
